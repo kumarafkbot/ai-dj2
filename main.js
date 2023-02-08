@@ -17,12 +17,15 @@ function setup() {
 function draw() {
 
     image(video,0,0,600,500)
-     fill("red")
-     stroke("black")
-     circle(leftWristX,leftWristY,20)
+     
 
       if(scoreLeftWrist>0.2)
       {
+       
+        fill("red")
+        stroke("black")
+        circle(leftWristX,leftWristY,20)
+       
         leftWristY = Number(leftWristY);
         remove_decimals = floor(leftWristY);
         volume = remove_decimals/500;
